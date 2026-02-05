@@ -2,6 +2,11 @@
 
 A Python toolkit for downloading and visualizing stellar spectra from the Sloan Digital Sky Survey (SDSS) Data Release 18, focused on F-type stars with effective temperatures around 6500 K.
 
+## Live Demo
+
+- [Interactive Sky Map](https://dfink.github.io/ccdemo/sky_map.html) - Explore star positions, hover to see spectra
+- [Spectrum Gallery](https://dfink.github.io/ccdemo/spectrum_plots/) - Browse all spectrum plots
+
 ## Features
 
 ### Spectrum Plots
