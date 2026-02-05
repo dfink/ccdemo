@@ -1,0 +1,16 @@
+# Data files (can be re-downloaded from SDSS)
+*.fits
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp

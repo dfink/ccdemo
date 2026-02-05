@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SDSS F Star Spectra</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #4a90d9;
+            padding-bottom: 10px;
+        }
+        .info {
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+            gap: 20px;
+        }
+        .spectrum {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .spectrum img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .spectrum-name {
+            padding: 10px;
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+        .nav {
+            margin-bottom: 20px;
+        }
+        .nav a {
+            margin-right: 15px;
+            color: #4a90d9;
+        }
+    </style>
+</head>
+<body>
+    <h1>SDSS DR18 F Star Spectra (Teff ~ 6500 K)</h1>
+    <div class="info">
+        <strong>100 spectra</strong> |
+        Gray vertical lines mark common stellar absorption features (Balmer series, Ca H&K, Mg, Na D, Fe lines)
+    </div>
+    <div class="gallery">
+        <div class="spectrum">
+            <a href="spec-0289-51990-0182.png" target="_blank">
+                <img src="spec-0289-51990-0182.png" alt="spec-0289-51990-0182">
+            </a>
+            <div class="spectrum-name">spec-0289-51990-0182</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-0760-52264-0537.png" target="_blank">
+                <img src="spec-0760-52264-0537.png" alt="spec-0760-52264-0537">
+            </a>
+            <div class="spectrum-name">spec-0760-52264-0537</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-0858-52316-0236.png" target="_blank">
+                <img src="spec-0858-52316-0236.png" alt="spec-0858-52316-0236">
+            </a>
+            <div class="spectrum-name">spec-0858-52316-0236</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-0861-52318-0235.png" target="_blank">
+                <img src="spec-0861-52318-0235.png" alt="spec-0861-52318-0235">
+            </a>
+            <div class="spectrum-name">spec-0861-52318-0235</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-0888-52339-0144.png" target="_blank">
+                <img src="spec-0888-52339-0144.png" alt="spec-0888-52339-0144">
+            </a>
+            <div class="spectrum-name">spec-0888-52339-0144</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-1135-53024-0522.png" target="_blank">
+                <img src="spec-1135-53024-0522.png" alt="spec-1135-53024-0522">
+            </a>
+            <div class="spectrum-name">spec-1135-53024-0522</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-1150-52644-0324.png" target="_blank">
+                <img src="spec-1150-52644-0324.png" alt="spec-1150-52644-0324">
+            </a>
+            <div class="spectrum-name">spec-1150-52644-0324</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-1150-52644-0437.png" target="_blank">
+                <img src="spec-1150-52644-0437.png" alt="spec-1150-52644-0437">
+            </a>
+            <div class="spectrum-name">spec-1150-52644-0437</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-1155-52581-0351.png" target="_blank">
+                <img src="spec-1155-52581-0351.png" alt="spec-1155-52581-0351">
+            </a>
+            <div class="spectrum-name">spec-1155-52581-0351</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-1255-52962-0001.png" target="_blank">
+                <img src="spec-1255-52962-0001.png" alt="spec-1255-52962-0001">
+            </a>
+            <div class="spectrum-name">spec-1255-52962-0001</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-1255-52962-0086.png" target="_blank">
+                <img src="spec-1255-52962-0086.png" alt="spec-1255-52962-0086">
+            </a>
+            <div class="spectrum-name">spec-1255-52962-0086</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-1299-52972-0626.png" target="_blank">
+                <img src="spec-1299-52972-0626.png" alt="spec-1299-52972-0626">
+            </a>
+            <div class="spectrum-name">spec-1299-52972-0626</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-1337-52767-0587.png" target="_blank">
+                <img src="spec-1337-52767-0587.png" alt="spec-1337-52767-0587">
+            </a>
+            <div class="spectrum-name">spec-1337-52767-0587</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-1471-52883-0621.png" target="_blank">
+                <img src="spec-1471-52883-0621.png" alt="spec-1471-52883-0621">
+            </a>
+            <div class="spectrum-name">spec-1471-52883-0621</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-1473-52908-0116.png" target="_blank">
+                <img src="spec-1473-52908-0116.png" alt="spec-1473-52908-0116">
+            </a>
+            <div class="spectrum-name">spec-1473-52908-0116</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-1709-53533-0395.png" target="_blank">
+                <img src="spec-1709-53533-0395.png" alt="spec-1709-53533-0395">
+            </a>
+            <div class="spectrum-name">spec-1709-53533-0395</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-1724-53859-0428.png" target="_blank">
+                <img src="spec-1724-53859-0428.png" alt="spec-1724-53859-0428">
+            </a>
+            <div class="spectrum-name">spec-1724-53859-0428</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-1880-53262-0077.png" target="_blank">
+                <img src="spec-1880-53262-0077.png" alt="spec-1880-53262-0077">
+            </a>
+            <div class="spectrum-name">spec-1880-53262-0077</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2054-53431-0513.png" target="_blank">
+                <img src="spec-2054-53431-0513.png" alt="spec-2054-53431-0513">
+            </a>
+            <div class="spectrum-name">spec-2054-53431-0513</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2057-53816-0282.png" target="_blank">
+                <img src="spec-2057-53816-0282.png" alt="spec-2057-53816-0282">
+            </a>
+            <div class="spectrum-name">spec-2057-53816-0282</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2077-53846-0544.png" target="_blank">
+                <img src="spec-2077-53846-0544.png" alt="spec-2077-53846-0544">
+            </a>
+            <div class="spectrum-name">spec-2077-53846-0544</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2078-53378-0017.png" target="_blank">
+                <img src="spec-2078-53378-0017.png" alt="spec-2078-53378-0017">
+            </a>
+            <div class="spectrum-name">spec-2078-53378-0017</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2079-53379-0367.png" target="_blank">
+                <img src="spec-2079-53379-0367.png" alt="spec-2079-53379-0367">
+            </a>
+            <div class="spectrum-name">spec-2079-53379-0367</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2082-53358-0528.png" target="_blank">
+                <img src="spec-2082-53358-0528.png" alt="spec-2082-53358-0528">
+            </a>
+            <div class="spectrum-name">spec-2082-53358-0528</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2149-54509-0595.png" target="_blank">
+                <img src="spec-2149-54509-0595.png" alt="spec-2149-54509-0595">
+            </a>
+            <div class="spectrum-name">spec-2149-54509-0595</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2184-53534-0386.png" target="_blank">
+                <img src="spec-2184-53534-0386.png" alt="spec-2184-53534-0386">
+            </a>
+            <div class="spectrum-name">spec-2184-53534-0386</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2186-54327-0318.png" target="_blank">
+                <img src="spec-2186-54327-0318.png" alt="spec-2186-54327-0318">
+            </a>
+            <div class="spectrum-name">spec-2186-54327-0318</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2193-53888-0572.png" target="_blank">
+                <img src="spec-2193-53888-0572.png" alt="spec-2193-53888-0572">
+            </a>
+            <div class="spectrum-name">spec-2193-53888-0572</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2207-53558-0251.png" target="_blank">
+                <img src="spec-2207-53558-0251.png" alt="spec-2207-53558-0251">
+            </a>
+            <div class="spectrum-name">spec-2207-53558-0251</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2222-53799-0182.png" target="_blank">
+                <img src="spec-2222-53799-0182.png" alt="spec-2222-53799-0182">
+            </a>
+            <div class="spectrum-name">spec-2222-53799-0182</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2250-53566-0315.png" target="_blank">
+                <img src="spec-2250-53566-0315.png" alt="spec-2250-53566-0315">
+            </a>
+            <div class="spectrum-name">spec-2250-53566-0315</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2251-53557-0602.png" target="_blank">
+                <img src="spec-2251-53557-0602.png" alt="spec-2251-53557-0602">
+            </a>
+            <div class="spectrum-name">spec-2251-53557-0602</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2253-54551-0393.png" target="_blank">
+                <img src="spec-2253-54551-0393.png" alt="spec-2253-54551-0393">
+            </a>
+            <div class="spectrum-name">spec-2253-54551-0393</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2275-53709-0344.png" target="_blank">
+                <img src="spec-2275-53709-0344.png" alt="spec-2275-53709-0344">
+            </a>
+            <div class="spectrum-name">spec-2275-53709-0344</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2299-53711-0164.png" target="_blank">
+                <img src="spec-2299-53711-0164.png" alt="spec-2299-53711-0164">
+            </a>
+            <div class="spectrum-name">spec-2299-53711-0164</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2300-53682-0325.png" target="_blank">
+                <img src="spec-2300-53682-0325.png" alt="spec-2300-53682-0325">
+            </a>
+            <div class="spectrum-name">spec-2300-53682-0325</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2323-54380-0484.png" target="_blank">
+                <img src="spec-2323-54380-0484.png" alt="spec-2323-54380-0484">
+            </a>
+            <div class="spectrum-name">spec-2323-54380-0484</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2337-53740-0455.png" target="_blank">
+                <img src="spec-2337-53740-0455.png" alt="spec-2337-53740-0455">
+            </a>
+            <div class="spectrum-name">spec-2337-53740-0455</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2340-53733-0106.png" target="_blank">
+                <img src="spec-2340-53733-0106.png" alt="spec-2340-53733-0106">
+            </a>
+            <div class="spectrum-name">spec-2340-53733-0106</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2345-53757-0221.png" target="_blank">
+                <img src="spec-2345-53757-0221.png" alt="spec-2345-53757-0221">
+            </a>
+            <div class="spectrum-name">spec-2345-53757-0221</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2393-54156-0240.png" target="_blank">
+                <img src="spec-2393-54156-0240.png" alt="spec-2393-54156-0240">
+            </a>
+            <div class="spectrum-name">spec-2393-54156-0240</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2401-53768-0384.png" target="_blank">
+                <img src="spec-2401-53768-0384.png" alt="spec-2401-53768-0384">
+            </a>
+            <div class="spectrum-name">spec-2401-53768-0384</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2402-54176-0351.png" target="_blank">
+                <img src="spec-2402-54176-0351.png" alt="spec-2402-54176-0351">
+            </a>
+            <div class="spectrum-name">spec-2402-54176-0351</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2402-54176-0520.png" target="_blank">
+                <img src="spec-2402-54176-0520.png" alt="spec-2402-54176-0520">
+            </a>
+            <div class="spectrum-name">spec-2402-54176-0520</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2403-53795-0111.png" target="_blank">
+                <img src="spec-2403-53795-0111.png" alt="spec-2403-53795-0111">
+            </a>
+            <div class="spectrum-name">spec-2403-53795-0111</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2410-54087-0539.png" target="_blank">
+                <img src="spec-2410-54087-0539.png" alt="spec-2410-54087-0539">
+            </a>
+            <div class="spectrum-name">spec-2410-54087-0539</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2414-54526-0402.png" target="_blank">
+                <img src="spec-2414-54526-0402.png" alt="spec-2414-54526-0402">
+            </a>
+            <div class="spectrum-name">spec-2414-54526-0402</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2441-54065-0632.png" target="_blank">
+                <img src="spec-2441-54065-0632.png" alt="spec-2441-54065-0632">
+            </a>
+            <div class="spectrum-name">spec-2441-54065-0632</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2447-54498-0484.png" target="_blank">
+                <img src="spec-2447-54498-0484.png" alt="spec-2447-54498-0484">
+            </a>
+            <div class="spectrum-name">spec-2447-54498-0484</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2515-54180-0389.png" target="_blank">
+                <img src="spec-2515-54180-0389.png" alt="spec-2515-54180-0389">
+            </a>
+            <div class="spectrum-name">spec-2515-54180-0389</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2537-53917-0422.png" target="_blank">
+                <img src="spec-2537-53917-0422.png" alt="spec-2537-53917-0422">
+            </a>
+            <div class="spectrum-name">spec-2537-53917-0422</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2544-53884-0391.png" target="_blank">
+                <img src="spec-2544-53884-0391.png" alt="spec-2544-53884-0391">
+            </a>
+            <div class="spectrum-name">spec-2544-53884-0391</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2548-54152-0232.png" target="_blank">
+                <img src="spec-2548-54152-0232.png" alt="spec-2548-54152-0232">
+            </a>
+            <div class="spectrum-name">spec-2548-54152-0232</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2548-54152-0499.png" target="_blank">
+                <img src="spec-2548-54152-0499.png" alt="spec-2548-54152-0499">
+            </a>
+            <div class="spectrum-name">spec-2548-54152-0499</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2561-54597-0085.png" target="_blank">
+                <img src="spec-2561-54597-0085.png" alt="spec-2561-54597-0085">
+            </a>
+            <div class="spectrum-name">spec-2561-54597-0085</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2620-54397-0436.png" target="_blank">
+                <img src="spec-2620-54397-0436.png" alt="spec-2620-54397-0436">
+            </a>
+            <div class="spectrum-name">spec-2620-54397-0436</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2622-54095-0292.png" target="_blank">
+                <img src="spec-2622-54095-0292.png" alt="spec-2622-54095-0292">
+            </a>
+            <div class="spectrum-name">spec-2622-54095-0292</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2629-54087-0387.png" target="_blank">
+                <img src="spec-2629-54087-0387.png" alt="spec-2629-54087-0387">
+            </a>
+            <div class="spectrum-name">spec-2629-54087-0387</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2672-54085-0244.png" target="_blank">
+                <img src="spec-2672-54085-0244.png" alt="spec-2672-54085-0244">
+            </a>
+            <div class="spectrum-name">spec-2672-54085-0244</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2681-54397-0035.png" target="_blank">
+                <img src="spec-2681-54397-0035.png" alt="spec-2681-54397-0035">
+            </a>
+            <div class="spectrum-name">spec-2681-54397-0035</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2682-54401-0579.png" target="_blank">
+                <img src="spec-2682-54401-0579.png" alt="spec-2682-54401-0579">
+            </a>
+            <div class="spectrum-name">spec-2682-54401-0579</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2701-54154-0633.png" target="_blank">
+                <img src="spec-2701-54154-0633.png" alt="spec-2701-54154-0633">
+            </a>
+            <div class="spectrum-name">spec-2701-54154-0633</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2708-54561-0299.png" target="_blank">
+                <img src="spec-2708-54561-0299.png" alt="spec-2708-54561-0299">
+            </a>
+            <div class="spectrum-name">spec-2708-54561-0299</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2716-54628-0567.png" target="_blank">
+                <img src="spec-2716-54628-0567.png" alt="spec-2716-54628-0567">
+            </a>
+            <div class="spectrum-name">spec-2716-54628-0567</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2808-54524-0265.png" target="_blank">
+                <img src="spec-2808-54524-0265.png" alt="spec-2808-54524-0265">
+            </a>
+            <div class="spectrum-name">spec-2808-54524-0265</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2890-54495-0111.png" target="_blank">
+                <img src="spec-2890-54495-0111.png" alt="spec-2890-54495-0111">
+            </a>
+            <div class="spectrum-name">spec-2890-54495-0111</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2890-54495-0531.png" target="_blank">
+                <img src="spec-2890-54495-0531.png" alt="spec-2890-54495-0531">
+            </a>
+            <div class="spectrum-name">spec-2890-54495-0531</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2907-54580-0541.png" target="_blank">
+                <img src="spec-2907-54580-0541.png" alt="spec-2907-54580-0541">
+            </a>
+            <div class="spectrum-name">spec-2907-54580-0541</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2911-54631-0193.png" target="_blank">
+                <img src="spec-2911-54631-0193.png" alt="spec-2911-54631-0193">
+            </a>
+            <div class="spectrum-name">spec-2911-54631-0193</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2914-54533-0310.png" target="_blank">
+                <img src="spec-2914-54533-0310.png" alt="spec-2914-54533-0310">
+            </a>
+            <div class="spectrum-name">spec-2914-54533-0310</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2915-54497-0628.png" target="_blank">
+                <img src="spec-2915-54497-0628.png" alt="spec-2915-54497-0628">
+            </a>
+            <div class="spectrum-name">spec-2915-54497-0628</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2931-54590-0123.png" target="_blank">
+                <img src="spec-2931-54590-0123.png" alt="spec-2931-54590-0123">
+            </a>
+            <div class="spectrum-name">spec-2931-54590-0123</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2933-54617-0545.png" target="_blank">
+                <img src="spec-2933-54617-0545.png" alt="spec-2933-54617-0545">
+            </a>
+            <div class="spectrum-name">spec-2933-54617-0545</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2940-54508-0094.png" target="_blank">
+                <img src="spec-2940-54508-0094.png" alt="spec-2940-54508-0094">
+            </a>
+            <div class="spectrum-name">spec-2940-54508-0094</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2942-54521-0299.png" target="_blank">
+                <img src="spec-2942-54521-0299.png" alt="spec-2942-54521-0299">
+            </a>
+            <div class="spectrum-name">spec-2942-54521-0299</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2964-54632-0525.png" target="_blank">
+                <img src="spec-2964-54632-0525.png" alt="spec-2964-54632-0525">
+            </a>
+            <div class="spectrum-name">spec-2964-54632-0525</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-2965-54594-0005.png" target="_blank">
+                <img src="spec-2965-54594-0005.png" alt="spec-2965-54594-0005">
+            </a>
+            <div class="spectrum-name">spec-2965-54594-0005</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3127-54835-0482.png" target="_blank">
+                <img src="spec-3127-54835-0482.png" alt="spec-3127-54835-0482">
+            </a>
+            <div class="spectrum-name">spec-3127-54835-0482</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3138-54740-0321.png" target="_blank">
+                <img src="spec-3138-54740-0321.png" alt="spec-3138-54740-0321">
+            </a>
+            <div class="spectrum-name">spec-3138-54740-0321</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3152-54801-0574.png" target="_blank">
+                <img src="spec-3152-54801-0574.png" alt="spec-3152-54801-0574">
+            </a>
+            <div class="spectrum-name">spec-3152-54801-0574</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3166-54830-0090.png" target="_blank">
+                <img src="spec-3166-54830-0090.png" alt="spec-3166-54830-0090">
+            </a>
+            <div class="spectrum-name">spec-3166-54830-0090</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3166-54830-0183.png" target="_blank">
+                <img src="spec-3166-54830-0183.png" alt="spec-3166-54830-0183">
+            </a>
+            <div class="spectrum-name">spec-3166-54830-0183</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3174-54821-0141.png" target="_blank">
+                <img src="spec-3174-54821-0141.png" alt="spec-3174-54821-0141">
+            </a>
+            <div class="spectrum-name">spec-3174-54821-0141</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3188-54831-0638.png" target="_blank">
+                <img src="spec-3188-54831-0638.png" alt="spec-3188-54831-0638">
+            </a>
+            <div class="spectrum-name">spec-3188-54831-0638</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3193-54830-0119.png" target="_blank">
+                <img src="spec-3193-54830-0119.png" alt="spec-3193-54830-0119">
+            </a>
+            <div class="spectrum-name">spec-3193-54830-0119</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3194-54833-0590.png" target="_blank">
+                <img src="spec-3194-54833-0590.png" alt="spec-3194-54833-0590">
+            </a>
+            <div class="spectrum-name">spec-3194-54833-0590</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3221-54864-0301.png" target="_blank">
+                <img src="spec-3221-54864-0301.png" alt="spec-3221-54864-0301">
+            </a>
+            <div class="spectrum-name">spec-3221-54864-0301</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3222-54862-0343.png" target="_blank">
+                <img src="spec-3222-54862-0343.png" alt="spec-3222-54862-0343">
+            </a>
+            <div class="spectrum-name">spec-3222-54862-0343</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3224-54849-0628.png" target="_blank">
+                <img src="spec-3224-54849-0628.png" alt="spec-3224-54849-0628">
+            </a>
+            <div class="spectrum-name">spec-3224-54849-0628</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3252-54893-0384.png" target="_blank">
+                <img src="spec-3252-54893-0384.png" alt="spec-3252-54893-0384">
+            </a>
+            <div class="spectrum-name">spec-3252-54893-0384</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3306-54922-0267.png" target="_blank">
+                <img src="spec-3306-54922-0267.png" alt="spec-3306-54922-0267">
+            </a>
+            <div class="spectrum-name">spec-3306-54922-0267</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3311-54943-0339.png" target="_blank">
+                <img src="spec-3311-54943-0339.png" alt="spec-3311-54943-0339">
+            </a>
+            <div class="spectrum-name">spec-3311-54943-0339</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3321-54924-0137.png" target="_blank">
+                <img src="spec-3321-54924-0137.png" alt="spec-3321-54924-0137">
+            </a>
+            <div class="spectrum-name">spec-3321-54924-0137</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3362-54939-0256.png" target="_blank">
+                <img src="spec-3362-54939-0256.png" alt="spec-3362-54939-0256">
+            </a>
+            <div class="spectrum-name">spec-3362-54939-0256</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3368-54954-0144.png" target="_blank">
+                <img src="spec-3368-54954-0144.png" alt="spec-3368-54954-0144">
+            </a>
+            <div class="spectrum-name">spec-3368-54954-0144</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3380-54977-0105.png" target="_blank">
+                <img src="spec-3380-54977-0105.png" alt="spec-3380-54977-0105">
+            </a>
+            <div class="spectrum-name">spec-3380-54977-0105</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3388-54947-0127.png" target="_blank">
+                <img src="spec-3388-54947-0127.png" alt="spec-3388-54947-0127">
+            </a>
+            <div class="spectrum-name">spec-3388-54947-0127</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3454-55003-0259.png" target="_blank">
+                <img src="spec-3454-55003-0259.png" alt="spec-3454-55003-0259">
+            </a>
+            <div class="spectrum-name">spec-3454-55003-0259</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3457-54984-0185.png" target="_blank">
+                <img src="spec-3457-54984-0185.png" alt="spec-3457-54984-0185">
+            </a>
+            <div class="spectrum-name">spec-3457-54984-0185</div>
+        </div>
+        <div class="spectrum">
+            <a href="spec-3466-54998-0476.png" target="_blank">
+                <img src="spec-3466-54998-0476.png" alt="spec-3466-54998-0476">
+            </a>
+            <div class="spectrum-name">spec-3466-54998-0476</div>
+        </div>
+    </div>
+</body>
+</html>
